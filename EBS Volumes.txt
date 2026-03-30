@@ -1,0 +1,35 @@
+***********
+EBS volumes
+***********
+
+> Create a volume
+
+> Attach it to a EC2 instance
+
+> Connect to the EC2 instance
+
+> Take control
+
+> Check whether volume is attached
+# lsblk
+
+> Check if there is any data on volume
+# file -s /dev/nvme1n1
+
+> Create a file system for volume
+# mkfs -t ext4 /dev/nvme1n1
+
+# mkdir /fileserver
+
+# mount /dev/nvme1n1 /fileserver
+
+# cd /fileserver
+
+> Create some file using nano 
+
+> Unmount the volume
+# umount /dev/nvme1n1
+
+> Check whether volume is unmounted or not 
+# cd /fileserver
+# ls
